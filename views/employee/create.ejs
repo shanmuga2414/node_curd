@@ -1,0 +1,28 @@
+<%- include ../partials/header %>
+<div class="container">
+<h3 class="text-success">Create New Employee</h3>
+<div class="col-lg-8" style="text-align:right"><a href="/employees" >Back to Employees List</a> <br/></div>
+<div class="col-lg-8">
+    
+  <form name="employee" id="addEmployee" method="post" action="/employees/save">
+    <div class="form-group">
+    <label for="name">Employee Name:</label>
+    <input type="text" class="form-control" name="username" placeholder="Employee Name"/>
+    </div>
+    <div class="form-group">
+            <label for="name">Address:</label><textarea class="form-control" name="address" placeholder="Employee Address"></textarea>
+            </div>
+             <div class="form-group">
+                <label for="name">Designation:</label><input class="form-control" type="text" name="position" placeholder="Employee Designation"/>
+             </div>
+             <div class="form-group">
+                    <label for="name">Salary:</label><input class="form-control" type="text" name="salary" placeholder="Employee Salary"/>
+                    </div>
+                    <div>
+                        <input type="submit" class="btn btn-success" name="add_employee" value="Save Employee"/>
+                    </div>
+                       
+  </form>
+</div>
+</div>
+  <%- include ../partials/footer %>

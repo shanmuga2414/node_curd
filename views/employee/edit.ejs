@@ -1,0 +1,27 @@
+<%- include ../partials/header %>
+<div class="container">
+        <h3 class="text-success">Update Employee Details</h3>
+        <div class="col-lg-8" style="text-align:right"><a href="/employees" >Back to Employees List</a> <br/></div>
+    <div class="col-lg-8">
+  <form name="employee" id="addEmployee" method="post" action="/employees/update/<%= employee._id %>">
+    <div class="form-group">
+    <label for="name">Employee Name:</label><input type="text" class="form-control" name="username" placeholder="Employee Name" value="<%= employee.username %>"/>
+    </div>
+    <div class="form-group">
+        
+            <label for="name">Address:</label><textarea name="address" class="form-control" placeholder="Employee Address"><%= employee.address %></textarea>
+            </div>
+             <div class="form-group"> 
+                <label for="name">Position:</label><input type="text" class="form-control" name="position" value="<%= employee.position %>" placeholder="Employee Designation"/>
+             </div>
+             <div class="form-group">
+                    <label for="name">Salary:</label><input class="form-control" type="text" name="salary" value="<%= employee.salary %>" placeholder="Employee Salary"/>
+                    </div>
+                    <div>
+                        <input type="submit" name="add_employee" class="btn btn-success" value="Update Employee"/>
+                    </div>
+                       
+  </form>
+</div>
+</div>
+  <%- include ../partials/footer %>

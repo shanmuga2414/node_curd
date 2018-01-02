@@ -1,0 +1,20 @@
+<%- include ../partials/header %>
+<div class="container">
+    
+    <h3 class="text-success">Employee <%= employee.username %> Details</h3>
+  <br/><br/>
+  <div class="col-lg-8">
+   <div class="row"><div class="col-lg-2"><b>Name</b></div><div class="col-lg-10"> : <%= employee.username %></div></div>
+   <div class="clearfix">&nbsp;</div>
+   <div class="row"><div class="col-lg-2"><b>Position</b></div><div class="col-lg-10"> : <%= employee.position %></div></div>
+   <div class="clearfix">&nbsp;</div>
+    <div class="row"><div class="col-lg-2"><b>Address</b></div><div class="col-lg-10"> : <%= employee.address %></div></div>
+    <div class="clearfix">&nbsp;</div>
+        <div class="row"><div class="col-lg-2"><b> Salary </b></div><div class="col-lg-10"> : <%= employee.salary %></div></div>
+  </div>
+
+  <div class="clearfix">&nbsp;</div>
+  <div class="col-lg-12"> <br/> <a href="/employees/create" class="btn-sm btn-info">Create New Employee</a>&nbsp;&nbsp;&nbsp;<a class="btn-sm btn-info" href="/employees">Employees List</a><br/></div>
+  
+</div>
+    <%- include ../partials/footer %>
